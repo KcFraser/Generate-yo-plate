@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Yo Plate</title>
+    <script src="https://kit.fontawesome.com/d2846d24fd.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href ="style.css">
+</head>
+<body>
+
+    <div class = "container">
+        <div class = "meal-wrapper">
+            <div class = "meal-saerch">
+                <h1 class = "title">Generate Yo Plate</h1>
+                <p>Welcome! Lets cook and vibe....shall we?(subjected to be edited in the future)</p>
+                
+                <div class = "search-box">
+                    <input type = "text" class = "search-content" placeholder = "Enter any ingredient" id = "search-input">
+                    <button type = "submit" class= "search-btn button" id ="search-btn">
+                        <i class = "fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class = "meal-results">
+                <h2 class = "title">Here's What We Found For You:</h2>
+                <div id = "meal">
+                    <!--Meal Item-->
+                    <div class = "meal-item">
+                     <div class = "meal-image">
+                         <img src = "food.JPG" alt = "food">
+                     </div>
+                     <div class = "meal-name">
+                         <h3>Eggs and Toast</h3>
+                         <a href = "#" class = "recipe-btn">Get Recipe</a>
+                         <a href = "#" class = "spotify-btn">Choose A Playlist</a>
+                     </div>
+                    </div>
+                    <!--End Of Meal Item-->
+                </div>
+            </div>
+        </div>   
+    </div>
+ 
+    
+    <scrpit src = "script.js"></scrpit>
+</body>
+</html>
