@@ -6,43 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generate Yo Plate</title>
     <script src="https://kit.fontawesome.com/d2846d24fd.js" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" href ="style.css">
+    <link rel = "stylesheet" href ="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <div class = "container">
-        <div class = "meal-wrapper">
-            <div class = "meal-saerch">
-                <h1 class = "title">Generate Yo Plate</h1>
-                <p>Welcome! Lets cook and vibe....shall we?(subjected to be edited in the future)</p>
-                
-                <div class = "search-box">
-                    <input type = "text" class = "search-content" placeholder = "Enter any ingredient" id = "search-input">
-                    <button type = "submit" class= "search-btn button" id ="search-btn">
+    <div class = "container flex h-screen justify-center items-center">
+        <div class = "p-6 rounded-full bg-gray-200 bg-opacity-75 border-solid border-4 border-green-600 text-center">
+                <h1 class = "font-bold">Generate Yo Plate</h1>
+                <p>Welcome! Lets cook and vibe....shall we?</p>
+                <div class = "search-box p-2">
+                    <input type = "text" class = "text-center p-2 rounded-full" placeholder = "Enter any ingredient" id = "search-input">
+                    <button type = "submit" class= "search-btn p-2" id ="search-btn">
                         <i class = "fas fa-search"></i>
                     </button>
                 </div>
             </div>
-            
-            <div class = "meal-results">
-                <h2 class = "title">Here's What We Found For You:</h2>
-                <div id = "meal">
+        </div>
+            <!-- <div class = "meal-results flex flex-col justify-center items-center"> -->
+                <!-- <h2 class = "title">Here's What We Found For You:</h2> -->
+                <!-- <div id = "meal"> -->
                     <!--Meal Item-->
-                    <div class = "meal-item">
+                    <!-- <div class = "meal-item">
                      <div class = "meal-image">
-                         <img src = "food.JPG" alt = "food">
+                         <img src = "food.JPG" alt = "food" class="h-12 w-12 ">
                      </div>
                      <div class = "meal-name">
                          <h3>Eggs and Toast</h3>
-                         <a href = "#" class = "recipe-btn">Get Recipe</a>
-                         <a href = "#" class = "spotify-btn">Choose A Playlist</a>
+                        <button class="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full w-32">Watch Video</button>
+                        <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full w-32">Playlist</button>
                      </div>
-                    </div>
+                    </div> -->
                     <!--End Of Meal Item-->
-                </div>
-            </div>
-        </div>   
-    </div>
+                <!-- </div>
+            </div> -->
+          
+
  
     
     <scrpit src = "script.js"></scrpit>
