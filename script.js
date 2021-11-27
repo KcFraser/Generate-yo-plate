@@ -21,11 +21,15 @@ fetch(urlApi).then(function(response){
     //check to see if the response was good, if not, alert that theres no meals found
     if(response.ok) {
         response.json().then(function(data){
-            //set the variables for the content
-            console.log(data);
+            //set the variables for the content, first check if any meals. if not, return out of function
+            if(!data.meals) {
+                alert("no meals found");
+                return;
+            } else {
+               //display the HTML results formatted in cards learn the HTML from this vid: https://www.youtube.com/watch?v=opikz5x_1ak&t=358s
+            }
+
         })
-    } else {
-        alert("No Meals Found with this ingredient");
-    }
+    } 
 })
 }
