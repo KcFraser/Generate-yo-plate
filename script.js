@@ -1,5 +1,6 @@
 var searchText = document.querySelector("#search-input");
 var searchBtn = document.querySelector("#search-btn");
+var mealsArr = [];
 
 
 //add an event listener to capture the text from the input form
@@ -27,9 +28,9 @@ fetch(urlApi).then(function(response){
                 return;
             } else {
                //display the HTML results formatted in cards learn the HTML from this vid: https://www.youtube.com/watch?v=opikz5x_1ak&t=358s
-               //loop should go through first 12 meals, displaying each one.
-               for(var i = 0; i < 13; i++) {
-                   console.log(data.meals[i]);
+               //loop should go through first 12 meals, displaying each one.;
+               for(var i = 0; i < data.meals.length; i++) {
+                    console.log(data.meals[i]);
                }
             }
 
