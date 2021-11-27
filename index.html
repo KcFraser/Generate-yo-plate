@@ -9,41 +9,73 @@
     <link rel = "stylesheet" href ="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body background="https://www.thegreatcoursesdaily.com/wp-content/uploads/2017/08/ThinkstockPhotos-530418242.jpg">
-
-    <div class = "container flex justify-center mt-8">
-        <div class = "p-6 rounded-full bg-gray-200 bg-opacity-75 border-solid border-4 border-green-600 text-center w-1/2">
-                <h1 class = "font-bold">Generate Yo Plate</h1>
+<body background="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8518337.jpg">
+    <!--Search bar start-->
+    <div class = "flex justify-center mt-8">
+        <div class = "p-6 rounded-full bg-white border-solid border-4 border-red-600 text-center w-2/3">
+                <h1 class = "text-7xl text-bold">Generate Yo Plate</h1>
                 <p>Welcome! Lets cook and vibe....shall we?</p>
                 <div class = "search-box p-2">
-                    <input type = "text" class = "text-center p-2 rounded-full" placeholder = "Enter any ingredient" id = "search-input">
+                    <input type = "text" class = "text-center p-2 rounded-full" placeholder = "Enter main ingredient" id = "search-input">
                     <button type = "submit" class= "search-btn p-2" id ="search-btn">
                         <i class = "fas fa-search"></i>
                     </button>
                 </div>
             </div>
         </div>
-            <!-- <div class = "meal-results flex flex-col justify-center items-center"> -->
-                <!-- <h2 class = "title">Here's What We Found For You:</h2> -->
-                <!-- <div id = "meal"> -->
-                    <!--Meal Item-->
-                    <!-- <div class = "meal-item">
-                     <div class = "meal-image">
-                         <img src = "food.JPG" alt = "food" class="h-12 w-12 ">
-                     </div>
-                     <div class = "meal-name">
-                         <h3>Eggs and Toast</h3>
-                        <button class="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full w-32">Watch Video</button>
-                        <button class="bg-green-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full w-32">Playlist</button>
-                     </div>
-                    </div> -->
-                    <!--End Of Meal Item-->
-                <!-- </div>
-            </div> -->
-          
+    <!--Search Bar End-->
 
- 
-    
+    <!--main div for the search results to stack on-->
+    <div class="p-2 justify-center flex flex-wrap overflow-hidden sm:-mx-4 md:-mx-1 lg:-mx-6 xl:-mx-6 gap-2">
+        <!--result div which will be cut and moved to JS file for dynamic creation-->
+        <div class="w-full overflow-hidden sm:my-4 sm:px-4 sm:w-1/2 md:my-1 md:px-1 md:w-full lg:my-6 lg:px-6 lg:w-1/3 xl:my-6 xl:px-6 xl:w-1/3 border border-solid bg-white">
+            <img class="w-full" src="./cupcake_demo.jpg" alt="Mountain">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Mountain</div>
+              <p class="text-black text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <!--recipie fetch button here-->
+            </div>
+          </div>
+
+          <!--testing what 3 cards, tis is 2/3-->
+          <div class="w-full overflow-hidden sm:my-4 sm:px-4 sm:w-1/2 md:my-1 md:px-1 md:w-full lg:my-6 lg:px-6 lg:w-1/3 xl:my-6 xl:px-6 xl:w-1/3 border border-solid bg-white">
+            <img class="w-full" src="./cupcake_demo.jpg" alt="Mountain">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Mountain</div>
+              <p class="text-black text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <!--recipe fetch button here-->
+            </div>
+          </div>
+
+          <!--testing what 3 cards  looks like, this is 3/3-->
+          <div class="w-full overflow-hidden sm:my-4 sm:px-4 sm:w-1/2 md:my-1 md:px-1 md:w-full lg:my-6 lg:px-6 lg:w-1/3 xl:my-6 xl:px-6 xl:w-1/3 border border-solid bg-white">
+            <img class="w-full" src="./cupcake_demo.jpg" alt="Mountain">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Mountain</div>
+              <p class="text-black text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+                <!--recipie fetch button goes here-->
+            </div>
+          </div>
+
+
+
+        <!--end of main div of recipe results from the search button-->
+    </div>
+
+
+
     <script src="./script.js"></script>
 </body>
 </html>

@@ -28,9 +28,10 @@ fetch(urlApi).then(function(response){
                 return;
             } else {
                //display the HTML results formatted in cards learn the HTML from this vid: https://www.youtube.com/watch?v=opikz5x_1ak&t=358s
-               //loop should go through first 12 meals, displaying each one.;
+               //loop should go through first all found meals, displaying each one.;
                for(var i = 0; i < data.meals.length; i++) {
                     console.log(data.meals[i]);
+                    //dynamically create the card content here!!!
                }
             }
 
