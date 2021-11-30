@@ -37,8 +37,23 @@ fetch(urlApi).then(function(response){
                     
                 });
             }
+
+            localStorage.setItem('searchResults', mealCreate.innerHTML);
 });
 
     }
 });
+
+//save the items to local storage
+
 }
+
+var loadStorage = function() {
+    var loadResults = localStorage.getItem('searchResults');
+    mealCreate.innerHTML = loadResults;
+}
+
+loadStorage();
+
+//load any local storage content thus far on load
+
