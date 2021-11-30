@@ -7,6 +7,8 @@ var mealsArr = [];
 
 //add an event listener to capture the text from the input form
 searchBtn.addEventListener("click", function(){
+    //clear out any old meals
+    mealCreate.innerHTML = "";
     var searchInput = searchText.value.trim();
     console.log(searchInput);
     //check to see if user entered anything, if not alert them to enter an ingredient
