@@ -79,25 +79,28 @@ var loadMealDetails = function(mealID){
 
             var instructionsElem = document.querySelector("#instructions");
             instructionsElem.textContent = data.meals[0].strInstructions;
-        })
-        .then(function () {
 
             //Run the text to speech api
-            var instructions = document.querySelector("#instructions");
-            instructions = instructions.textContent;
-            var apiURL = "http://api.voicerss.org/?key=7814e85b6cf347d58749c22162e3d4e7&hl=en-gb&src=" + instructions;
+            var apiURL = "http://api.voicerss.org/?key=7814e85b6cf347d58749c22162e3d4e7&hl=en-gb&src=" + data.meals[0].
+            strInstructions;
+            console.log('api url',apiURL);
             var myAudio = new Audio(apiURL);
             myAudio.play();
+
+        })
+        /* .then(function () {
+
             
-        });
+            
+        }); */
 
 }
 
 var getMealDetails = function(event){
-    console.log(event.target);
+    //console.log(event.target);
     var mealID = event.target;
     mealID = mealID.getAttribute("data-meal_id");
-    console.log(mealID);
+    //console.log(mealID);
     loadMealDetails(mealID);
 }
 
