@@ -15,20 +15,18 @@ var apiURL = "http://api.voicerss.org/?key=7814e85b6cf347d58749c22162e3d4e7&hl=e
 
 function playAudioFetchVer () {
     fetch(apiURL)
-        .then(function(response) {
-            console.log(response.url);
-            return response.url;
+        .then(function(response){
+            return response;
         })
-        .then(function(data) {
-	        console.log(data);
-            document.querySelector("#player").setAttribute("src",data);
-            //var myAudio = new Audio(data);
-            //console.dir(myAudio);
-            //myAudio.play();
+        .then(function(data){
+            // Create an "Audio" object and feed the API URL into it
+            var myAudio = new Audio(data.url);
+            myAudio.play();
         })
-        .catch(function(error){
-            alert("error");
-        });
+        .catch(function(error) {
+            // Catch any errors that are detected
+            console.dir(error);
+        })
 }
 
 
