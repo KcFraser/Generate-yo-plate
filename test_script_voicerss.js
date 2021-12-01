@@ -1,3 +1,4 @@
+// THIS FILE IS STRICTLY 
 
 // Text to Speech API test
 // API provided by Voice RSS (voicerss.org)
