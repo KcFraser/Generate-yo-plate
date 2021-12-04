@@ -90,11 +90,11 @@ var loadMealDetails = function(event) {
             instructionsElem.textContent = data.meals[0].strInstructions;
 
             //Run the text to speech api
-            var apiURL = "http://api.voicerss.org/?key=7814e85b6cf347d58749c22162e3d4e7&hl=en-gb&src=" + data.meals[0].
-            strInstructions;
-            console.log('api url', apiURL);
-            var myAudio = new Audio(apiURL);
-            myAudio.play();
+            //var apiURL = "http://api.voicerss.org/?key=7814e85b6cf347d58749c22162e3d4e7&hl=en-gb&src=" + data.meals[0].
+            //strInstructions;
+            //console.log('api url', apiURL);
+            //var myAudio = new Audio(apiURL);
+            //myAudio.play();
 
         })
 

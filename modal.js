@@ -1,6 +1,7 @@
 
 var modal_container = document.getElementById ('modal_container');
 var close = document.getElementById ('close');
+var playAudio = document.getElementById ('playAudio')
 
 // Rather than putting the event listener on the "Get recipe" button itself, I added the event listener on the entire div that's used to show all of the potential recipes. 
 var results_display = document.querySelector("#results-display");
@@ -30,6 +31,18 @@ results_display.addEventListener('click', (event)=> {
     }
 
 });
+
+playAudio.addEventListener('click', function() {
+    modal_container.myAudio;
+    console.log (playAudio);
+});
+
+//Run the text to speech api
+var apiURL = "http://api.voicerss.org/?key=7814e85b6cf347d58749c22162e3d4e7&hl=en-gb&src=" + data.meals[0].
+    strInstructions;
+    console.log('api url', apiURL);
+    var myAudio = new Audio(apiURL);
+    myAudio.play();
 
 close.addEventListener('click', ()=> {
     modal_container.classList.remove('show'); 
