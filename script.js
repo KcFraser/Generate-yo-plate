@@ -44,7 +44,7 @@ var getMeals = function(userInput) {
                             mealContent +=     "<div class='px-6 py-4'>";
                             mealContent +=         "<div class='font-bold text-xl mb-2' id='search-result-0'>" + meal.strMeal + "</div>";
                             mealContent +=         "<div class='px-6 pt-4 pb-2 flex justify-end'>";
-                            mealContent +=             "<button data-meal_id='" + meal.idMeal + "' id='open recipe-btn-" + i + "' class='bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center' type='button'>Get Recipe</button>";
+                            mealContent +=             "<button data-meal_id='" + meal.idMeal + "' id='recipe-btn-" + i + "' class='get-recipe-btn bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center' type='button'>Get Recipe</button>";
                             mealContent +=         "</div>";
                             mealContent +=     "</div>";
                             mealContent += "</div>";

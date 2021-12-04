@@ -27,17 +27,17 @@
         </div>
     </div>
     <!--Search Bar End-->
-    <!-- <button id ="open"> -->
-        <!-- Click me please -->
-    <!-- </button> -->
+    
+    <!--<button id ="open">Open the modal</button>-->
+
     <!-- The invisible instructions div -->
-    <div class="modal-container" id = "modal_container"></div>
-    <div class="flex justify-center mt-8"> 
-      <div class ="modal" id="instructions">
-        <button id="close">
-            close
-        </button>
-      </div>
+    <div class="modal-container" id = "modal_container">
+        <div class="flex justify-center mt-8"> 
+            <div class ="modal">
+                <div id="instructions"></div>
+                <button id="close" class="bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center">Close</button>
+            </div>
+        </div>
     </div>
 
     <!--main div for the search results to stack on-->
@@ -69,7 +69,7 @@
          
     
     <script src="./script.js"></script>
-    <script src="./script2.js"></script>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
