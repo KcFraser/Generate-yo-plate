@@ -2,3 +2,9 @@ body {
     /*background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX8518337.jpg");*/
     background-image: url("background.jpg");
 }
+
+.logo {
+    background-image: url("./generate-yo-plate-logo-orange.png");
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}
