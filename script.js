@@ -38,7 +38,17 @@ var getMeals = function(userInput) {
                             // Get recipe/meal ID No.
                             console.log("meal ID", meal.idMeal);
 
-                            mealCreate.innerHTML += "<div class='meals w-full overflow-hidden sm:my-4 sm:px-4 sm:w-1/2 md:my-1 md:px-1 md:w-full lg:my-6 lg:px-6 lg:w-1/3 xl:my-6 xl:px-6 xl:w-1/3 border border-solid bg-gray-200 rounded-lg ...'><img class='w-full' src=" + meal.strMealThumb + " alt='Mountain'><div class='px-6 py-4'><div class='font-bold text-xl mb-2' id='search-result-0'>" + meal.strMeal + "</div><div class='px-6 pt-4 pb-2 flex justify-end'><button data-meal_id='" + meal.idMeal + "' id='recipe-btn-" + i + "' class='bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center' type='button'>Get Recipe</button></div>";
+                            var mealContent = '';
+                            mealContent += "<div class='meals w-full overflow-hidden sm:my-4 sm:px-4 sm:w-1/2 md:my-1 md:px-1 md:w-full lg:my-6 lg:px-6 lg:w-1/3 xl:my-6 xl:px-6 xl:w-1/3 border border-solid bg-gray-200 rounded-lg'>";
+                            mealContent +=     "<img class='w-full' src=" + meal.strMealThumb + " alt='Mountain'>";
+                            mealContent +=     "<div class='px-6 py-4'>";
+                            mealContent +=         "<div class='font-bold text-xl mb-2' id='search-result-0'>" + meal.strMeal + "</div>";
+                            mealContent +=         "<div class='px-6 pt-4 pb-2 flex justify-end'>";
+                            mealContent +=             "<button data-meal_id='" + meal.idMeal + "' id='open recipe-btn-" + i + "' class='bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center' type='button'>Get Recipe</button>";
+                            mealContent +=         "</div>";
+                            mealContent +=     "</div>";
+                            mealContent += "</div>";
+                            mealCreate.innerHTML += mealContent;
 
                         });
                     } else {
