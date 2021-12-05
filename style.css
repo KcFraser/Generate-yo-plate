@@ -37,6 +37,8 @@ button {
     height: 100%;
     width: 100%;
     transition: opacity 0.3s ease;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 .modal-container.show {
@@ -49,7 +51,7 @@ button {
     opacity: 0.93;
     border-radius: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
-    width: 750px;
+    min-width: 500px;
     max-width: 100%;
     padding: 40px 60px;
     text-align: center;
