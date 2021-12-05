@@ -14,6 +14,7 @@
 
 <body>
 
+    <!--"Scroll to top" button-->
     <button class="hover: hidden fixed bottom-5 right-5 z-99 font-bold border-0 outline-none bg-red-500 text-white cursor-pointer p-3 rounded-md text-lg" onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     
     <!--Search bar start-->
@@ -24,19 +25,21 @@
             <div class="search-box p-2 mt-80">
                 <input type="text" class="text-center p-2 rounded-full" placeholder="Enter main ingredient" id="search-input">
                 <button type="submit" class="search-btn p-2" id="search-btn">
-                        <i class = "fas fa-search"></i>
-                    </button>
+                    <i class = "fas fa-search"></i>
+                </button>
             </div>
         </div>
     </div>
     <!--Search Bar End-->
+
+    <!--Spotify Embed-->
     <div class="p-2 justify-center flex flex-wrap overflow-hidden sm:-mx-4 md:-mx-1 lg:-mx-6 xl:-mx-6 gap-2">
         <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXb1JVnfCng2p?utm_source=generator" width="525" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
     
     <!--<button id ="open">Open the modal</button>-->
 
-    <!-- The invisible instructions div -->
+    <!-- The Modal & Invisible instructions div -->
     <div class="modal-container" id = "modal_container">
         <div class="flex justify-center mt-8 "> 
             <div class ="modal w-90% h-auto  md:w-1/2 bg-contain md:bg-auto md:w-1/2 bg-contain md:bg-auto rounded-lg border-4 border-gray-500 border-opacity-100">
@@ -48,24 +51,25 @@
         </div>
     </div>
 
-    <!--main div for the search results to stack on-->
+    <!--Main div for the search results to stack on-->
     <div class="p-8 justify-center flex flex-wrap overflow-hidden sm:-mx-4 md:-mx-6 lg:-mx-6 xl:-mx-6 grid-cols-3" id="results-display">
 
     </div>
         <!--result div which will be cut and moved to JS file for dynamic creation-->
 
-
         <!--testing what 3 cards, tis is 2/3-->
-
 
         <!--testing what 3 cards  looks like, this is 3/3-->
 
-
-
         <!--end of main div of recipe results from the search button-->
-        
-       
-        
+    
+        <footer class=" ml-4 mb-2 text-center font-serif">
+            <h2>Find your Delicious Meal Today! &#128077;</h2>
+            <div>
+                <a href="#">Read Our Privacy Policy</a><br />
+                &copy; 2021 Generate Yo' Plate, Inc.
+              </div>
+        </footer>
     
     <script src="./script.js"></script>
     <script src="./modal.js"></script>
