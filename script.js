@@ -45,7 +45,7 @@ var getMeals = function(userInput) {
                             mealContent +=     "<div class='px-6 py-4'>";
                             mealContent +=         "<div class='font-bold text-xl mb-2' id='search-result-0'>" + meal.strMeal + "</div>";
                             mealContent +=         "<div class='px-6 pt-4 pb-2 flex justify-end'>";
-                            mealContent +=             "<button data-meal_id='" + meal.idMeal + "' id='recipe-btn-" + i + "' class='get-recipe-btn bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center' type='button'>Get Recipe</button>";
+                            mealContent +=             "<button data-meal_id='" + meal.idMeal + "' id='recipe-btn-" + i + "' class='get-recipe-btn bg-yellow-600 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center' type='button'>Get Recipe</button>";
                             mealContent +=         "</div>";
                             mealContent +=     "</div>";
                             mealContent += "</div>";
@@ -128,3 +128,20 @@ var mealList = document.querySelector("#results-display");
 mealList.addEventListener("click", loadMealDetails);
 //load any local storage content thus far on load
 loadStorage();
+
+//Get the button:
+mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
