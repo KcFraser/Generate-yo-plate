@@ -15,7 +15,7 @@
 <body>
     <!--Search bar start-->
     <div class="flex justify-center mt-8">
-        <div class="h-96 rounded-lg bg-white border-solid border-4 border-gray-300 text-center w-1/2 logo">
+        <div class="h-96 rounded-lg bg-white border-solid border-4 border-gray-300 text-center w-11/12 md:w-1/2 logo bg-contain md:bg-auto">
             <h1 class="text-7xl text-bold"></h1>
             <!-- <p>Welcome! Lets cook and vibe....shall we?</p> -->
             <div class="search-box p-2 mt-80">
@@ -35,12 +35,12 @@
 
     <!-- The invisible instructions div -->
     <div class="modal-container" id = "modal_container">
-        <div class="flex justify-center mt-8"> 
-            <div class ="modal">
+        <div class="flex justify-center mt-8 rounded-lg border-4 border-gray-500 border-opacity-100... "> 
+            <div class ="modal w-90% h-auto  md:w-1/2 bg-contain md:bg-auto md:w-1/2 bg-contain md:bg-auto">
                 <div id="instructions"></div>
+                <button id="YouTubeLink" class="bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center">Youtube Link</button>
                 <button id="playAudio" class="bg-green-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none ml-1 mt-1 ease-linear transition-all duration-150 items-center">Play Audio</button>
                 <button id="close" class="bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center">Close</button>
-                <button id="YouTubeLink" class="bg-red-500 text-white font-bold uppercase w-50 text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 items-center">YoutubeLink</button>
             </div>
         </div>
     </div>
