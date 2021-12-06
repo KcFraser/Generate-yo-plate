@@ -39,3 +39,9 @@ Future development includes:
 |  Created by A.Abdi, A.Campeau, K.Fraser, A.Lewis,  F.Khan &  D.Yoshizawa  |
 |                               Generate-Yo-Plate, 2021                     |
 +---------------------------------------------------------------------------+
+
+https://github.com/KcFraser/Generate-yo-plate
+
+
+https://kcfraser.github.io/Generate-yo-plate/
+
