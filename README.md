@@ -35,6 +35,11 @@ Future development includes:
     - ingredient filtering
     - updating the voice 
 
+## Presentation Link
+https://docs.google.com/document/d/1FQdYhXpXtvD27SG8pZc3FR7Ys3_gBu0Wd5NHWY5yu_s/edit?usp=sharing
+
+https://docs.google.com/presentation/d/1qK8ENIvmBMav7CBykmbYnMnJmdj6yE14QOkOQqJjEY4/edit?usp=sharing
+
 +---------------------------------------------------------------------------+
 |  Created by A.Abdi, A.Campeau, K.Fraser, A.Lewis,  F.Khan &  D.Yoshizawa  |
 |                               Generate-Yo-Plate, 2021                     |
